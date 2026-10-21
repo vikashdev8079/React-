@@ -14,7 +14,7 @@ function App(){
     <div>
       {/* <Navbar count={value}/>
      <Counter printCountValue={printCountValue}/> */}
-     <Todo/>
+     <Todo />
      {/* <Counter/> */}
 
     </div>

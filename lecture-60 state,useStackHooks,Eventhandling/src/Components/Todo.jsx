@@ -9,9 +9,9 @@ function Todo() {
 
    
 
-    // function printValue(e){
-    //      setValue(e.target.value) 
-    // }
+    function printValue(e){
+         setValue(e.target.value) 
+    }
 
     function addTodo(e){
         e.preventDefault();
@@ -29,11 +29,14 @@ function Todo() {
     <h1>Todo</h1>
     <form action=""onSubmit={addTodo}>
         {/* <input type="text" onChange={printValue} value={value}/> */}
-        <input type="text" onChange={(e)=> setValue(e.target.value) } value={value}/>
+        <input value={value} type="text" onChange={(e)=> setValue(e.target.value)}/>
         <button >Add</button>
     </form>
         <ul>
-            {todos.map((todo)=><li>{todo}</li>)}
+            {todos.map((todo)=>
+                (<li>{todo}</li>
+                    
+                ))}
         </ul>
         </>
      )
